@@ -1,0 +1,40 @@
+{
+  "name": "yiidoc/yii2-video-js",
+  "description": " Yii 2 Widget for the [video.js](http://www.videojs.com/). A JavaScript and CSS library that makes it easier to work with and build on HTML5 video. This is also known as an HTML5 Video Player.",
+  "keywords": [
+    "yii2-video-js",
+    "yii2",
+    "yii2-extension",
+    "videojs",
+    "html5 video"
+  ],
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "support": {
+    "issues": "https://github.com/yiidoc/yii2-video-js/issues",
+    "wiki": "https://github.com/yiidoc/yii2-video-js/wiki/",
+    "source": "https://github.com/yiidoc/yii2-video-js"
+  },
+  "authors": [
+    {
+      "name": "Nghia Nguyen",
+      "email": "yiidevelop@hotmail.com",
+      "homepage": "http://imnghia.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0",
+    "bower-asset/video.js": "~5.18.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "yiidoc\\videojs\\": "src"
+    }
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
