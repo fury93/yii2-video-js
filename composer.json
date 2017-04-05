@@ -1,6 +1,7 @@
 {
-  "name": "yiidoc/yii2-video-js",
+  "name": "fury93/yii2-video-js",
   "description": " Yii 2 Widget for the [video.js](http://www.videojs.com/). A JavaScript and CSS library that makes it easier to work with and build on HTML5 video. This is also known as an HTML5 Video Player.",
+  "version": "1.1.0",
   "keywords": [
     "yii2-video-js",
     "yii2",
@@ -11,15 +12,19 @@
   "type": "yii2-extension",
   "license": "BSD-3-Clause",
   "support": {
-    "issues": "https://github.com/yiidoc/yii2-video-js/issues",
-    "wiki": "https://github.com/yiidoc/yii2-video-js/wiki/",
-    "source": "https://github.com/yiidoc/yii2-video-js"
+    "issues": "https://github.com/fury93/yii2-video-js/issues",
+    "wiki": "https://github.com/fury93/yii2-video-js/wiki/",
+    "source": "https://github.com/fury93/yii2-video-js"
   },
   "authors": [
     {
       "name": "Nghia Nguyen",
       "email": "yiidevelop@hotmail.com",
       "homepage": "http://imnghia.com"
+    },
+    {
+      "name": "Yourick Laptev",
+      "email": "www.fanreala@gmail.com"
     }
   ],
   "require": {
@@ -28,7 +33,7 @@
   },
   "autoload": {
     "psr-4": {
-      "yiidoc\\videojs\\": "src"
+      "fury93\\videojs\\": "src"
     }
   },
   "extra": {

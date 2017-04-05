@@ -20,7 +20,7 @@ class VideoJsWidget extends Widget
     public $options = [];
     public $clientOptions = [];
     public $clientEvents = [];
-
+    public $playlist = null;
 
     public function init()
     {
@@ -30,6 +30,7 @@ class VideoJsWidget extends Widget
     public function run()
     {
         $this->registerJs();
+        $this->registerPlaylist();
         $this->registerEvents();
         $this->renderPlayer();
     }
@@ -37,6 +38,11 @@ class VideoJsWidget extends Widget
     protected function registerAssetBundle()
     {
         VideoJsAsset::register($this->getView());
+    }
+
+    protected function registerPlaylistAssetBundle()
+    {
+        VideoJsPlaylistAsset::register($this->getView());
     }
 
     protected function registerJs()
@@ -70,5 +76,15 @@ class VideoJsWidget extends Widget
             }
         }
         echo Html::endTag('video');
+    }
+
+    protected function registerPlaylist()
+    {
+        if (!empty($this->playlist && is_array($this->playlist))) {
+            $this->registerPlaylistAssetBundle();
+            $playlistOptions = new JsExpression(Json::encode($this->playlist));
+            $this->getView()->registerJs("player.playlist($playlistOptions); ");
+            $this->getView()->registerJs("player.playlistUi();");
+        }
     }
 }
