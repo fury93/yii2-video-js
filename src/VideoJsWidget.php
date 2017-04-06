@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ubuntu
- * Date: 01/03/2016
- * Time: 07:08
- */
 
-namespace yiidoc\videojs;
+namespace fury93\videojs;
 
 
 use yii\base\Widget;

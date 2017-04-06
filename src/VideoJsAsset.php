@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ubuntu
- * Date: 01/03/2017
- * Time: 00:59
- */
 
-namespace yiidoc\videojs;
+namespace fury93\videojs;
 use yii\web\AssetBundle;
 
 class VideoJsAsset extends AssetBundle
