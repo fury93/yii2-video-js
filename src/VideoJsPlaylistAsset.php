@@ -16,7 +16,7 @@ class VideoJsPlaylistAsset extends AssetBundle
     ];
 
     public $depends = [
-        'yiidoc\videojs\VideoJsAsset',
+        'fury93\videojs\VideoJsAsset',
     ];
 
     /**
